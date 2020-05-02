@@ -17,7 +17,7 @@ public class TestConfig {
         String baseUrl = "https://github.com/dawmaj";
         driver = getInstance();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS); //I have a very slow laptop, this value should be lower - eg. 10 seconds
         driver.get(baseUrl);
     }
 }

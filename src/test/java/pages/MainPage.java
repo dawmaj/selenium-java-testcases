@@ -14,4 +14,11 @@ public class MainPage {
 
     @FindBy(css = ".application-main")
     private WebElement pageContent;
+
+    @FindBy(css = ".vcard-names > .vcard-fullname")
+    private WebElement fullNameGithub;
+
+    public String getFullName() {
+        return fullNameGithub.getText();
+    }
 }

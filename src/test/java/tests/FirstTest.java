@@ -8,10 +8,13 @@ import pages.MainPage;
 
 import static config.WebDriverInitalization.quit;
 
-public class FirstTest extends TestConfig {
+public class FirstTest{
+
+    TestConfig test = new TestConfig();
 
     @Test
     public void FirstTest(){
+        test.setUp("https://github.com/dawmaj");
         String text = new MainPage()
                 .getFullName();
         Assert.assertEquals(text,"Dawid Majsnerowski");

@@ -12,12 +12,11 @@ public class TestConfig {
 
     private WebDriver driver;
 
-    @BeforeTest
-    public void setUp() {
-        String baseUrl = "https://github.com/dawmaj";
+    public TestConfig setUp(String baseUrl) {
         driver = getInstance();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS); //I have a very slow laptop, this value should be lower - eg. 10 seconds
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); //I have a very slow laptop, this value should be lower - eg. 10 seconds
         driver.get(baseUrl);
+        return this;
     }
 }

@@ -1,0 +1,1 @@
+{"uuid":"cac32bbc-ac41-4b86-8475-f2f208e1cd5d","name":"selenium-java-testcases","children":["2ef0f0c5-51fb-472d-b3bc-516fd47cd864"],"befores":[],"afters":[{"name":"closeDriver","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1592077509623,"stop":1592077510373}],"links":[],"start":1592077498542,"stop":1592077510373}

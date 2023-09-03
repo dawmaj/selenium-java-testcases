@@ -2,6 +2,7 @@ package config;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class WebDriverInitalization {
@@ -10,6 +11,8 @@ public class WebDriverInitalization {
 
     public static WebDriver getInstance(){
         if (driver == null){
+            //ChromeOptions options = new ChromeOptions();
+            //options.setHeadless(false);
             System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\ChromeDriver\\chromedriver.exe");
             driver = new ChromeDriver();
         }
